@@ -1,0 +1,7 @@
+.idea/*
+recordings/*
+__pycache__/
+*.egg-info/
+*.bag
+*.npz
+*.onnx

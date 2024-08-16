@@ -1,0 +1,5 @@
+calibration_file_name: "base_calibration.pkl"
+cam_name: "" # TODO, insert correct cam_name, see readme 
+cam_id: "0"
+use_gpu: "false"
+crop: 0

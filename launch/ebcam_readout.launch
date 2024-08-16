@@ -1,0 +1,15 @@
+<launch>
+
+
+  <arg name="node_name_ebcam_readout"            default="ebcam_readout_node" />
+  <arg name="config_ebcam_readout"          default="$(find evetac_software)/config/$(arg node_name_ebcam_readout).yaml" />
+
+      <group ns="$(anon node_name_ebcam_readout)">
+        <rosparam file="$(arg config_ebcam_readout)" />
+    </group>
+
+  <node name="$(anon node_name_ebcam_readout)" pkg="evetac_software" type="track_dots_ros.py" output="screen" clear_params="true">
+    <param name="calibration_file_path" value="$(find evetac_software)/calibration/calibrations/" />
+  </node>
+
+</launch>

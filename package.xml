@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>evetac_software</name>
+  <version>1.0.0</version>
+  <description>Ros_python_pkg package for reading out the Evetac tactile sensor.</description>
+
+  <!-- EDIT: Maintainer and author's name and email -->
+  <maintainer email="niklas@robot-learning.de">Niklas Funk</maintainer>
+  <author email="niklas@robot-learning.de">Niklas Funk</author>
+
+  <!-- EDIT: License -->
+  <license>GNU General Public License Version 3</license>
+
+  <!-- Required for all packages -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies for building -->
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+
+  <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <build_export_depend>sensor_msgs</build_export_depend>
+
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+  <export>
+  </export>
+</package>

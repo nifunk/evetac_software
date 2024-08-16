@@ -1,0 +1,14 @@
+<launch>
+
+
+  <arg name="node_name_ebcam_tracking_visualization"            default="ebcam_tracking_visualization_node" />
+  <arg name="config_ebcam_tracking_visualization"          default="$(find evetac_software)/config/$(arg node_name_ebcam_tracking_visualization).yaml" />
+
+      <group ns="$(anon node_name_ebcam_tracking_visualization)">
+        <rosparam file="$(arg config_ebcam_tracking_visualization)" />
+    </group>
+
+  <node name="$(anon node_name_ebcam_tracking_visualization)" pkg="evetac_software" type="pictorial_event_processing_w_initial_point_locations.py" output="screen" clear_params="true">
+  </node>
+
+</launch>
