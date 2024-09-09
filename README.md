@@ -187,7 +187,7 @@ extracted using simple opencv functionality.
 This procedure of extracting the dots can be launched via
 
 ```console
-$ python calibrate.py --name new_calibration_round_2_12
+$ python3 calibrate.py --name new_calibration_round_2_12
 ```
 
 Note: the name argument specifies the name of the calibration file that is
