@@ -111,7 +111,7 @@ class CameraProcessor:
 
     def start_keypoint_track(self, request):
         self.tracking_active = True
-        return TriggerResponse(success=True, message="Stopped tracking - tracking status now: " + str(self.tracking_active))
+        return TriggerResponse(success=True, message="Started tracking - tracking status now: " + str(self.tracking_active))
 
     def store_current_calibration(self, request):
         # Function to store the current calibration (i.e., location of the dots)
